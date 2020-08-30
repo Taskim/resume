@@ -1,26 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useRef } from 'react'
+
+import Home from './components/Home'
+import Bio from './components/Bio'
+import Experiences from './components/Experiences'
+import Projects from './components/Projects'
+import s from './App.module.css'
 
 function App() {
+  const containerRef = useRef<HTMLDivElement>(null)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={s.app} ref={containerRef}>
+      <div className={s.page}>
+        <Home />
+      </div>
+      <div className={s.page}>
+        <Bio />
+      </div>
+      <div className={s.page}>
+        <Experiences />
+      </div>
+      <div className={s.page}>
+        <Projects />
+      </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

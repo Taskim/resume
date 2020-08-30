@@ -1,0 +1,66 @@
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    scroll-snap-align: start;
+    background: linear-gradient(180deg, rgba(184, 166, 218, 1) 0%, rgba(96, 204, 255, 1) 100%);
+}
+
+.timeline {
+    height: 80%;
+    margin-left: 20%;
+    position: relative;
+}
+
+.line {
+    width: 2px;
+    background: #fff;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.points {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    margin-left: -19px;
+}
+
+.pointContainer {
+    display: flex;
+}
+
+.point {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #666;
+    transition: transform 0.1s ease-out;
+    cursor: pointer;
+}
+
+.point:hover {
+    transform: scale(1.1);
+}
+
+.logo {
+    width: 20px;
+    height: 20px;
+}
+
+.arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 30px solid #fff;
+    position: absolute;
+    top: -30px;
+    left: -11px;
+}

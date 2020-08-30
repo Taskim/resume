@@ -1,0 +1,13 @@
+.container {
+    position: sticky;
+    top: 0;
+    width: fit-content;
+    font-size: 32px;
+    font-weight: 100;
+    background: #00000020;
+    z-index: 1;
+    margin: 0;
+    clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
+    text-align: left;
+    padding: 0px 32px 8px 16px;
+}

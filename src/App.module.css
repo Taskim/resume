@@ -1,0 +1,15 @@
+.app {
+    text-align: center;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+    color: #FFF;
+}
+
+.page {
+    flex: 0 0 100%;
+    content: ' ';
+    width: 100vw;
+    height: 100vh;
+    scroll-snap-align: start;
+}

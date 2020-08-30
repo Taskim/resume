@@ -1,0 +1,25 @@
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    scroll-snap-align: start;
+    background: linear-gradient(180deg, rgba(96, 204, 255, 1) 0%, rgba(150, 242, 159, 1) 100%);
+}
+
+.block {
+    display: flex;
+    align-items: flex-start;
+}
+
+.img {
+    width: 200px;
+    opacity: 0.8;
+    border: 4px solid #fff;
+    background: linear-gradient(315deg, white, transparent);
+}
+
+.bio {
+    text-align: justify;
+    padding: 0 16px;
+    width: 250px;
+}

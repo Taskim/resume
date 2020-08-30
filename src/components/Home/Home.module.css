@@ -1,0 +1,29 @@
+.container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    scroll-snap-align: start;
+    background: linear-gradient( 180deg, rgba(255, 189, 91, 1) 0%, rgba(255, 137, 184, 1) 100%);
+}
+
+.name {
+    font-size: 72px;
+    font-weight: 500;
+}
+
+.student {
+    width: 200px;
+    transition: all 4s;
+}
+
+.particles {
+    position: absolute;
+    right: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
